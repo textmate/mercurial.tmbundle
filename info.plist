@@ -83,6 +83,15 @@
 		<string>75575B16-87B9-40A3-9101-B027DD43D31F</string>
 		<string>296CC34F-72CA-4720-A77D-0452EEB3813C</string>
 	</array>
+	<key>require</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>SCM</string>
+			<key>uuid</key>
+			<string>3BDF79F4-94AE-46C0-BFBF-D5572AD2F515</string>
+		</dict>
+	</array>
 	<key>uuid</key>
 	<string>162dcb4d-4227-11da-a523-000d93c89990</string>
 </dict>
