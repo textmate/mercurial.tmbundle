@@ -13,7 +13,7 @@ require_cmd "${TM_HG:=hg}" "If you have installed hg, then you need to either up
 export TM_HG
 export CommitWindow="$TM_SCM_COMMIT_WINDOW"
 
-cd "${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY}"
+cd "$TM_DIRECTORY"
 ruby -- "${TM_BUNDLE_SUPPORT}/hg_commit.rb"</string>
 	<key>input</key>
 	<string>none</string>
