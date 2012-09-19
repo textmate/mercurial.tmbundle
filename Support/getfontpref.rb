@@ -2,7 +2,7 @@ require "#{ENV['TM_SUPPORT_PATH']}/lib/osx/plist"
 
 # Load TM preferences to discover the current font settings
 # Taken from doc2html by Brad Choate -- http://bradchoate.com/
-textmate_pref_file = '~/Library/Preferences/com.macromates.textmate.plist'
+textmate_pref_file = "~/Library/Preferences/#{ENV['TM_APP_IDENTIFIER'] || 'com.macromates.textmate'}.plist"
 $prefs = OSX::PropertyList.load(File.open(File.expand_path(textmate_pref_file)))
  
 def getfontname
