@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -s
+#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -s
 # encoding: utf-8
 
 abort "Wrong arguments: use -path=«file to revert»" if $path.nil?

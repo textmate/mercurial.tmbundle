@@ -12,7 +12,7 @@ require_cmd "${TM_HG:=hg}" "If you have installed Mercurial, then you need to ei
 
 cd "$TM_PROJECT_DIRECTORY"
 
-ruby -r "$TM_SUPPORT_PATH/lib/shelltokenize.rb" &lt;&lt;END
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -r "$TM_SUPPORT_PATH/lib/shelltokenize.rb" &lt;&lt;END
 	hg = ENV['TM_HG'] || "hg"
 	output = puts %x{#{hg} init}
 	puts output

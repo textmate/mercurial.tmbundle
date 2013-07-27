@@ -57,7 +57,7 @@ revs=( $revs )
 rev1=${revs[0]#r}
 rev2=${revs[1]#r}
 
-ruby -I "$TM_BUNDLE_SUPPORT/" &lt;&lt;END
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -I "$TM_BUNDLE_SUPPORT/" &lt;&lt;END
 	if ENV['TM_HG_EXT_DIFF']
 		require 'hg_extdiff'
 	else

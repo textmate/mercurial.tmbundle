@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -w
+#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -w
 
 $LOAD_PATH << ENV['TM_SUPPORT_PATH'] + "/lib"
 

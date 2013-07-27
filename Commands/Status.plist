@@ -16,7 +16,7 @@ export CommitWindow="$TM_SCM_COMMIT_WINDOW"
 
 # show it..
 
-ruby -r "$TM_SUPPORT_PATH/lib/shelltokenize.rb" &lt;&lt;END
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -r "$TM_SUPPORT_PATH/lib/shelltokenize.rb" &lt;&lt;END
 	hg = ENV['TM_HG'] || "hg"
 	puts %x{#{hg} status --debug #{TextMate.selected_paths_for_shell} 2&gt;&amp;1|ruby -KU -- "${TM_BUNDLE_SUPPORT}/format_status.rb" "--status"}
 END
