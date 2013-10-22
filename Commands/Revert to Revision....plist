@@ -54,7 +54,7 @@ rescan_project
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Revert to Revision...</string>
+	<string>Revert to Revision…</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

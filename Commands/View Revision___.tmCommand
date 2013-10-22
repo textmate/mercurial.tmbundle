@@ -50,7 +50,7 @@ open -a "TextMate" "$FILENAME"
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>View Revision...</string>
+	<string>View Revision…</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
