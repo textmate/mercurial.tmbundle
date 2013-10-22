@@ -71,7 +71,7 @@ END
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Diff Revisions...</string>
+	<string> Diff Revisions...</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

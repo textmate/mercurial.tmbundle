@@ -26,7 +26,7 @@ END
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Diff with Newest (Tip)</string>
+	<string> Diff with Newest (Tip)</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
