@@ -23,9 +23,9 @@ HG_STYLE_TMP='"$HG_STYLE"'
 TM_HG_TMP='"$TM_HG"'
 
 if [[ -z $TM_SELECTED_FILES ]]; then
-   "$TM_HG" log $HG_LIMIT --style "$HG_STYLE" "$TM_FILEPATH" 2&gt;&amp;1 |ruby -- "$FORMAT_LOG"
+   "$TM_HG" log $HG_LIMIT --style "$HG_STYLE" "$TM_FILEPATH" 2&gt;&amp;1 |/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "$FORMAT_LOG"
 else
-   eval "$TM_HG_TMP" log $HG_LIMIT --style "$HG_STYLE_TMP" "$TM_SELECTED_FILES" 2&gt;&amp;1 |ruby -- "$FORMAT_LOG"
+   eval "$TM_HG_TMP" log $HG_LIMIT --style "$HG_STYLE_TMP" "$TM_SELECTED_FILES" 2&gt;&amp;1 |/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "$FORMAT_LOG"
 fi</string>
 	<key>input</key>
 	<string>none</string>
