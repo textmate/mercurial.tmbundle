@@ -60,7 +60,7 @@ begin
       mup.ul{ matches_to_paths(conflict_paths).each{ |path| mup.li(path) } }
       mup.text! "Canceled."
     }
-    exit(-1)
+    exit 0
   end
 
   # Remove the unknown paths from the commit
@@ -84,9 +84,9 @@ begin
   status = $CHILD_STATUS
   if status != 0
     mup.div( "class" => "error" ) {
-      mup.text! "Canceled (#{status >> 8})."
+      mup.text! "Canceled."
     }
-    exit(-1)
+    exit 0
   end
 
   mup.div("class" => "command"){ mup.strong(%Q{#{hg} commit}); mup.text!(commit_args) }
