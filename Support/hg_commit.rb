@@ -1,12 +1,12 @@
 require 'English' # you are angry, english!
 
-hg				   = ENV['TM_HG'] || `which hg`.chomp
-commit_tool		= ENV['CommitWindow']
-bundle			= ENV['TM_BUNDLE_SUPPORT']
-support			= ENV['TM_SUPPORT_PATH']
+hg          = ENV['TM_HG'] || `which hg`.chomp
+commit_tool = ENV['CommitWindow']
+bundle      = ENV['TM_BUNDLE_SUPPORT']
+support     = ENV['TM_SUPPORT_PATH']
 ignore_file_pattern = /(\/.*)*(\/\..*|\.(tmproj|o|pyc)|Icon)/
 
-CURRENT_DIR		= Dir.pwd + "/"
+CURRENT_DIR = Dir.pwd + "/"
 
 require support + "/lib/shelltokenize.rb"
 require bundle + "/lib/Builder.rb"
@@ -50,8 +50,8 @@ begin
     }
   end
 
-  # Fail if we have conflicts -- hg commit will fail, so let's
-  # error out before the user gets too involved in the commit
+  # Exit if we have conflicts -- hg commit will fail, so let's
+  # quit before the user gets too involved in the commit
   conflict_paths = paths.select { |m| m[0] == 'C' }
 
   if conflict_paths and conflict_paths.size > 0 then
