@@ -79,7 +79,7 @@ begin
   commit_paths_array = matches_to_paths(commit_matches)
   commit_status = matches_to_status(commit_matches).join(":")
   commit_path_text = commit_paths_array.collect{|path| path.quote_filename_for_shell }.join(" ")
-  commit_args = %x{"#{commit_tool}" --status #{commit_status} #{commit_path_text}}
+  commit_args = %x{"#{commit_tool}" --diff-cmd "#{hg}",diff --status #{commit_status} #{commit_path_text}}
 
   status = $CHILD_STATUS
   if status != 0
