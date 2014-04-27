@@ -179,8 +179,10 @@ js_functions = <<ENDJS #javascript
 						#{ %{cmd += "export   TM_HG_FROM_STATUS=true;";}   }
 						
 						cmd += 'ruby18 -- #{e_sh_js ENV['TM_BUNDLE_SUPPORT']}/hg_commit.rb'
-						document.getElementById('commandOutput').innerHTML = TextMate.system(cmd, null).outputString + ' \\n'
-						
+						commit_result = TextMate.system(cmd, hg_commit_output);
+					};
+					hg_commit_output = function(task){
+						display_tail("info", "info", task.outputString);
 						TextMate.isBusy = false;
 					};
 					// the filename passed in to the following functions is already properly shell escaped
