@@ -14,7 +14,7 @@ export TM_HG
 export CommitWindow="$TM_SCM_COMMIT_WINDOW"
 
 cd "$TM_DIRECTORY"
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "${TM_BUNDLE_SUPPORT}/hg_commit.rb"</string>
+ruby18 -- "${TM_BUNDLE_SUPPORT}/hg_commit.rb"</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>

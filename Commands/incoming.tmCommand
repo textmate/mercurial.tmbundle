@@ -17,7 +17,7 @@ FORMAT_LOG="${TM_BUNDLE_SUPPORT}/format_log.rb"
 HG_STYLE="${TM_BUNDLE_SUPPORT}/map-incoming.changelog"
 
 
-"$TM_HG" incoming -v --style "$HG_STYLE" 2&gt;&amp;1 |/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "$FORMAT_LOG" "--in"
+"$TM_HG" incoming -v --style "$HG_STYLE" 2&gt;&amp;1 |ruby18 -- "$FORMAT_LOG" "--in"
 </string>
 	<key>input</key>
 	<string>none</string>
