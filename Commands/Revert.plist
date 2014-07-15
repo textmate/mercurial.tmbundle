@@ -6,16 +6,12 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 if [[ -z $TM_SELECTED_FILES ]]; then
    "$TM_HG" revert "$TM_FILEPATH"
 else
    eval "$TM_HG" revert $TM_SELECTED_FILES
 fi
-
-# will cause current file to be re-loaded
-rescan_project
 </string>
 	<key>input</key>
 	<string>none</string>

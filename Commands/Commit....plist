@@ -6,7 +6,6 @@
 	<string>saveModifiedFiles</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 export TM_HG
 export CommitWindow="$TM_SCM_COMMIT_WINDOW"

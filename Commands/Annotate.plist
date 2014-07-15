@@ -6,7 +6,6 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 "$TM_HG" annotate -nud "$TM_FILEPATH" 2&gt;&amp;1 \
 |ruby18 -- "${TM_BUNDLE_SUPPORT}/format_annotate.rb"</string>
