@@ -8,8 +8,6 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-require_cmd "${TM_HG:=hg}" "If you have installed hg, then you need to either update your &lt;tt&gt;PATH&lt;/tt&gt; or set the &lt;tt&gt;TM_HG&lt;/tt&gt; shell variable (e.g. in Preferences / Advanced)"
-
 export WorkPath="$TM_DIRECTORY"; cd "$TM_DIRECTORY"
 
 export CommitWindow="$TM_SCM_COMMIT_WINDOW"
@@ -34,6 +32,20 @@ END
 	<string>html</string>
 	<key>outputLocation</key>
 	<string>newWindow</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>hg</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/hg</string>
+				<string>/usr/local/bin/hg</string>
+			</array>
+			<key>variable</key>
+			<string>TM_HG</string>
+		</dict>
+	</array>
 	<key>scope</key>
 	<string>attr.scm.hg</string>
 	<key>semanticClass</key>
