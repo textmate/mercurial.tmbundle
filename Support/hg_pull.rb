@@ -13,7 +13,7 @@ TextMate::call_with_progress(:title => "Pull from default repos.",
                            :message => "Accessing Parent Repository…",
                            :output_filepath => nil) do
 
-   `cd #{work_path};#{hg} pull`
+   `cd "#{work_path}";#{hg} pull`
 
 end
 
